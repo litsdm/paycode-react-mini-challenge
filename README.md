@@ -2,8 +2,8 @@
 Para este challenge de front-end deberas de re-crear el diseño proporcionado y llenar los datos usando los endpoints proporcionados.
 
 ## Endpoint
-`/challenge/unauth/report`
-  ```
+Obtener Reporte: `GET - /challenge/unauth/report`
+  ```JSON
   {
     "averageTicket": 1200,
     "topTicket": 3400,

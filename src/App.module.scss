@@ -1,0 +1,25 @@
+.container {}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 32px 16px
+}
+
+.sectionTitle {
+  color: #6B7280;
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 16px;
+  margin-bottom: 16px;
+}
+
+.highlight {
+  color: #000;
+}
+
+.cardList {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}

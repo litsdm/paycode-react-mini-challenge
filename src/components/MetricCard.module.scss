@@ -1,0 +1,44 @@
+.container {
+  flex-basis: calc(33% - 40px);
+  padding: 16px;
+  position: relative;
+}
+
+.label {
+  color: #6B7280;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.metric {
+  color: #374151;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.currency {
+  color: #374151;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.6;
+}
+
+.badge {
+  align-items: center;
+  border-radius: 16px;
+  display: flex;
+  height: 32px;
+  padding: 0 16px;
+  position: absolute;
+  right: 8px;
+  top: 8px
+}
+
+.badgeIcon {
+  margin-right: 6px;
+}
+
+.badgeText {
+  font-weight: 500;
+}

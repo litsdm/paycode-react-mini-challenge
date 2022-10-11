@@ -10,6 +10,16 @@ import type { User, ResponseReport } from './types';
 const App = () => {
   const [user, setUser] = useState<Partial<User>>({});
 
+  const calculatePercentage = (currentMetric: number, previousMetric: number) => {
+    if (currentMetric > previousMetric) return `${((currentMetric / previousMetric - 1) * 100).toFixed(2)}%`;
+    return `${((previousMetric / currentMetric - 1) * 100).toFixed(2)}%`;
+  };
+
+  const getBadgeType = (currentMetric: number, previousMetric: number) => {
+    if (currentMetric >= previousMetric) return 'increase';
+    return 'decrease';
+  };
+
   /**
    * TODO
    * Crear la funcion fetchReport para obtener el reporte desde '/challenge/unauth/report'
